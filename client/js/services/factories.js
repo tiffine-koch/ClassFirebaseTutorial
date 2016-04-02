@@ -49,21 +49,3 @@ app.service('$threads', function($firebaseArray, $firebaseObject, FB_URL) {
     return $firebaseArray(postsRef);
   }
 })
-// })
-// app.factory('$threads', function($firebaseArray, FB_URL) {
-//   var ref = new Firebase(FB_URL);
-//   var threadsRef = ref.child('threads');
-//
-//   return {
-//     getArray = function() {
-//       return $firebaseArray(threadsRef);
-//     },
-//     create = function(subject) {
-//       return this.getArray().$loaded()
-//       .then(function(threads)
-//         return threads.$add ({
-//         subject: subject
-//         })
-//       })
-//     }
-// })

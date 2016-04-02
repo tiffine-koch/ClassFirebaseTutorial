@@ -1,0 +1,10 @@
+<h1>Thread Detail</h1>
+
+<h3>{{thread.subject}}</h3>
+
+<text cols="60" rows="4" ng-model='newPost.text' placeholder="Post Text"></text>
+<button class="btn btn-success" ng-click'post()'>Submit Post</button>
+
+<ul>
+  <li ng-repeat='post in posts' ng-style='{color: post.color}'>{{post.text}} - {{post.text}}</li>
+</ul>
